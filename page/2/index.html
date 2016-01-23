@@ -146,6 +146,43 @@
     <ol class="post-list">
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/12/nodejs-cpu-cal/" title="link to Node.js和cpu密集型计算">Node.js和cpu密集型计算</a></h2>
+        <time datetime="12月27 2014" class="post-list__meta--date date">12月27 2014</time>
+      <p class="excerpt">
+        <pre>
+<code class="javascript">
+setTimeout(function () {
+    for (var i = 0; i < 10000000000; i++) {
+        //CPU密集
+    }
+}, 200);
+
+setTimeout(function () {
+    console.log('210 ms...');
+}, 210);
+</code>
+</pre>
+
+<p>这个小例子很经典的解释了Node.js遇到密集型CPU的时候问题,这个程序分别在两个时间点触发,虽然在210ms得时候回调内得程序执行非常很快,但是在200ms得时候处理了一个CPU非常密集型的任务就导致整个线程阻塞了.<br>
+      </p>
+      <div class="post-list__meta">
+		<a class="btn-border-small" href="/2014/12/nodejs-cpu-cal/">阅读全文</a>
+        <span class="post-list__meta--tags tags">
+		 
+			  <a class="category-link" href="/categories/tech" style="">技术</a>
+		  
+
+		 
+          	
+            <a class="tags-link" href="../../tags/Node-js">Node.js</a>, <a class="tags-link" href="../../tags/cpu密集型计算">cpu密集型计算</a>
+          	
+		  
+        </span>
+      </div>
+      <hr class="post-list__divider" />
+    </li>
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/2014/12/nohup-sighup/" title="link to nohup和SIGHUP信号">nohup和SIGHUP信号</a></h2>
         <time datetime="12月26 2014" class="post-list__meta--date date">12月26 2014</time>
       <p class="excerpt">
