@@ -56,7 +56,6 @@ $(document).ready(function() {
 
 setShareData("http://vimer.me/images/show_favicon.png");
 function setShareData(imgUrl) {
-	alert(1)
    if (imgUrl) {
       var img = new Image();
       img.src = imgUrl;
